@@ -1,0 +1,16 @@
+@use '../sass/abstracts/mixins';
+
+.row{
+    display: flex;
+    flex-wrap: wrap; 
+  //  justify-content: flex-start;
+    margin-left: -0.5rem; 
+    margin-right: -0.5rem; 
+    &.justify-content-space-between{
+        justify-content: space-between; 
+    }
+    &.justify-content-center {
+        justify-content: center; 
+    }
+    @include mixins.alignItems();
+}
